@@ -1,4 +1,4 @@
-## Assignment 1 — The guessing game
+## Assignment 1 - The guessing game
 
 Write a program that plays a number guessing game with the user.
 

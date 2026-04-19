@@ -1,4 +1,4 @@
-## Assignment 1 (advanced) — Guessing game tournament
+## Assignment 1 (advanced) - Guessing game tournament
 Write a program that plays multiple rounds of the guessing game and keeps a score across rounds.
 
 Each round works the same as before - a random number between 1 and 100, up to 7 guesses, too high/too low feedback. However, the scoring system rewards efficiency: the fewer guesses a player uses, the more points they earn.
