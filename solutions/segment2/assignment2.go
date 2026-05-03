@@ -48,7 +48,12 @@ You may find you need more functions than these, or that you want to combine or 
 
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
 
 var validScores = []int{1, 2, 3, 4, 5, 6, 7, 8, 10, 12}
 
@@ -105,6 +110,8 @@ func main() {
 		"Norway":   {8, 5, 7},
 	}
 
+	reader := bufio.NewReader(os.Stdin)
+
 	for {
 		fmt.Println("\n1. Add a country")
 		fmt.Println("2. Add a score for a country")
@@ -118,8 +125,8 @@ func main() {
 		switch choice {
 		case 1:
 			fmt.Print("Country name: ")
-			var name string
-			fmt.Scan(&name)
+			name, _ := reader.ReadString('\n')
+			name = strings.TrimSpace(name)
 			if _, exists := scores[name]; exists {
 				fmt.Println("Country already exists.")
 			} else {
@@ -129,8 +136,8 @@ func main() {
 
 		case 2:
 			fmt.Print("Country name: ")
-			var name string
-			fmt.Scan(&name)
+			name, _ := reader.ReadString('\n')
+			name = strings.TrimSpace(name)
 			if _, exists := scores[name]; !exists {
 				fmt.Println("Country not found.")
 				break
