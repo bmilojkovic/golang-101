@@ -108,3 +108,38 @@ roster := map[string]Player{
     "alice": {Name: "alice", Score: 100, Active: true},
 }
 ```
+
+### Interfaces
+```golang
+// this interface exists in Go natively
+type Stringer interface {
+    String() string
+}
+```
+
+```golang
+// if your struct has a method with this exact
+// signature, Go treats it as its string representation
+func (p Player) String() string {
+    return fmt.Sprintf(
+        "%s | HP: %d | Score: %d",
+        p.Name, p.Health, p.Score,
+    )
+}
+
+// fmt.Println will call String() automatically
+p := Player{Name: "alice", Health: 100, Score: 200}
+fmt.Println(p)
+// alice | HP: 100 | Score: 200
+
+// so will %v and %s in Printf
+fmt.Printf("Player: %v\n", p)
+// Player: alice | HP: 100 | Score: 200
+```
+
+```golang
+// without String(), fmt.Println prints
+// the raw struct fields like this:
+fmt.Println(p)
+// {alice 100 200 1}
+```

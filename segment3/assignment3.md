@@ -8,7 +8,7 @@ A `Pet` has a name, a species, an age, and a status indicating whether they have
 
 A `Shelter` has a name and keeps a list of all the pets currently in its care.
 
-To get started, populate your shelter with at least 5 creative and original pets of your own invention. Points are awarded for imagination.
+To get started, populate your shelter with at least 5 creative and original pets of your own invention.
 
 The user interacts with the shelter through a menu:
 1. List available pets
