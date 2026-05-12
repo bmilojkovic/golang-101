@@ -1,4 +1,4 @@
-# Assignment 2 - Eurovision score tracker
+## Assignment 2 - Eurovision score tracker
 
 You are building a live score tracker for the Eurovision Song Contest. Countries compete by receiving scores from multiple judges, and your program should track those scores and report the standings at any time.
 
@@ -20,11 +20,11 @@ The user can then interact with the program through a menu:
 4. Quit
 ```
 
-## Scoring rules
+### Scoring rules
 
 Judges can only award the following point values: `1, 2, 3, 4, 5, 6, 7, 8, 10, 12`. Your program should reject any score that is not in this list and ask the user to try again.
 
-## Standings
+### Standings
 
 Standings should show for each country:
 
@@ -35,7 +35,7 @@ Standings should show for each country:
 
 After the per-country breakdown, print the current leader — the country with the highest total.
 
-## Functions to consider
+### Functions to consider
 
 - A function that checks whether a score is valid
 - A function that prints the full standings
