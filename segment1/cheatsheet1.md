@@ -1,3 +1,7 @@
+### Tour of go
+Interactive website that covers all Go syntax through examples. You shouldn't go through all of it, but feel free to use it as a reference when you are missing something.
+[Tour of Go](https://go.dev/tour/welcome/1)
+
 ### Program structure
 ```golang
 package main
